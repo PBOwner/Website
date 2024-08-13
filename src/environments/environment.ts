@@ -4,11 +4,11 @@
 
 export const environment = {
   defaultIconURL: '/assets/img/icon.png',
-  discordInvite: 'https://discord.gg/nH9D8Jg',
-  endpoint: 'http://localhost:3000/api/v1',
+  discordInvite: 'https://discord.gg/Eyd3c8APMq',
+  endpoint: 'http://0.0.0.0:3000/api/v1',
   recaptchaSiteKey: '6LfvCsEZAAAAAJjjEsBvG5PWnh_45rqCp_RuFZfi',
   production: false,
-  url: 'http://localhost:4200',
+  url: 'http://0.0.0.0:4200',
   version: 'v0.0.2a'
 };
 
