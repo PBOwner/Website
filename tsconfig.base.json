@@ -7,12 +7,14 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "module": "es2020",
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "typeRoots": [
       "node_modules/@types"
     ],
