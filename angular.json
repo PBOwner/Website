@@ -50,7 +50,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -181,8 +180,7 @@
       }
     }
   },
-  "defaultProject": "dlist-website",
   "cli": {
-    "analytics": "6e350057-1306-4152-b868-7ccc4b4c4614"
+    "analytics": "bac0b1a4-b2f7-45ba-a68c-ccad864ce82e"
   }
 }
