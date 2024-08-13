@@ -1,7 +1,7 @@
 import 'zone.js/dist/zone-node';
 
 import { ngExpressEngine } from '@nguniversal/express-engine';
-import * as express from 'express';
+import express from 'express'; // Change this line
 import { join } from 'path';
 
 import { AppServerModule } from './src/main.server';
@@ -30,7 +30,7 @@ global['navigator'] = win.navigator;
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
-  const server = express();
+  const server = express(); // This should now work correctly
 
   const distFolder = join(process.cwd(), 'dist/dlist-website/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
@@ -51,7 +51,7 @@ export function app() {
   }));
 
   // All regular routes use the Universal engine
-  server.get('*', compression(), (req, res) => {    
+  server.get('*', compression(), (req, res) => {
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
 
